@@ -1,0 +1,184 @@
+.answer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #E92C49 url('~@/assets/img/bg-home.png') no-repeat;
+    background-size: 750px 622px;
+}
+
+.user {
+    position: absolute;
+    top: 25px;
+    left: 24px;
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 4px solid #FDC93A;
+        position: relative;
+        z-index: 1;
+    }
+
+    span {
+        position: relative;
+        left: -30px;
+        z-index: 0;
+        padding-left: 35px;
+        padding-right: 28px;
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        font-size: 26px;
+        color: #A75721;
+        font-weight: bold;
+        background-color: #FDC93A;
+        border-radius: 25px;
+    }
+}
+
+.physicalStrength {
+    position: absolute;
+    top: 10px;
+    right: 23px;
+    width: 153px;
+    height: 80px;
+    background: url('~@/assets/img/physicalStrengthBtn.png') no-repeat center bottom;
+    background-size: 153px 61px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fragment {
+    position: relative;
+
+    li {
+        position: absolute;
+        width: 123px;
+        height: 125px;
+        background: url('~@/assets/img/lightning.png') no-repeat center;
+        background-size: 100%;
+    }
+    li:first-child {
+        top: 134px;
+        left: 26px;
+    }
+
+    li:last-child {
+        top: 404px;
+        left: 113px;
+    }
+}
+
+.ranking {
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 126px;
+    height: 58px;
+}
+
+.icon {
+    position: absolute;
+    top: 223px;
+    right: 20px;
+
+    li {
+        margin-bottom: 28px;
+
+        img {
+            width: 98px;
+            height: 98px;
+        }
+    }
+}
+
+.info {
+    position: absolute;
+    top: 331px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 456px;
+    height: 56px;
+    line-height: 56px;
+    background: rgba(143, 7, 35, .3) url('~@/assets/img/horn.png') no-repeat 17px center;
+    background-size: 22px 19px;
+    border-radius: 28px;
+    padding-left: 48px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+
+    span {
+        color: #FDE24C;
+    }
+}
+
+.makeMoney {
+    position: absolute;
+    top: 466px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+        position: relative;
+        width: 267px;
+        height: 267px;
+        z-index: 1;
+    }
+
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, .4);
+        animation: biger 2s linear infinite;
+    }
+
+    @keyframes biger {
+        from {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        to {
+            transform: translate(-50%, -50%) scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    div:last-child {
+        background-color: rgba(255, 255, 255, .2);
+        animation: biger 2s linear 1s infinite;
+    }
+}
+
+progress {
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:229px;
+    height:8px;
+    color:rgba(255,234,0,1);
+    background: #fff;
+    border-radius: 4px;
+}
+
+/* 表示总长度背景色 */
+progress::-webkit-progress-bar {
+    background: #fff;
+    border-radius: 4px;
+}
+
+/* 表示已完成进度背景色 */
+progress::-webkit-progress-value {
+    border-radius: 4px;
+    background: linear-gradient(270deg,rgba(255,234,0,1),rgba(255,159,21,1));
+}
